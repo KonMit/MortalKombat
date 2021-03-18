@@ -192,10 +192,12 @@ body {
 
 @media (max-width:768px) {
     .main__container {
+        padding-top: 10%;
+    }
+    .main__description {
         display: flex;
         align-items: center;
-        flex-direction: column;
-        padding-top: 10%;
+        justify-content: center;
     }
     .container {
         padding: 0px 15px;
