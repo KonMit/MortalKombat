@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body {
+    background: #010202;
+}
+
+.background {
+    background: linear-gradient(90deg, #010202 0%, #010202 45%, rgba(1, 2, 2, 0.2) 90%);
+    height: 100vh;
+}
+
+
+/* Стили для видео */
+
+.overlay {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#nubexDiv {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+#nubexVideo {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/* Стили для видео */
+
+.container {
+    max-width: 1146px;
+    margin: auto;
+}
+
+.header {}
+
+.header__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 56px 0px 56px 0px;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+}
+
+.user {}
+
+.user__text {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.user__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 0px 0px 15px;
+}
+
+.main {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.main__container {
+    padding-top: 10%;
+}
+
+.main__film-logo {
+    width: 405px;
+    height: 90px;
+}
+
+.main__tags {
+    display: flex;
+    align-items: center;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    color: #E5E5E5;
+    opacity: 0.4;
+    font-size: 14px;
+}
+
+.tags__text {
+    margin: 0px 15px 0px 0px
+}
+
+.tags__age {
+    padding: 1px 5px;
+    border: 1px solid #E5E5E5;
+}
+
+.main__description {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 140%;
+    font-size: 21px;
+}
+
+.main__buttons {}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {}
+
+.button__image {
+    width: 12px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+.button__text {
+    font-size: 16px;
+}
+
+.main__button_primary {
+    padding: 10px 25px;
+    border-radius: 6px;
+    background: #EA6E20;
+}
+
+.main__button {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 41px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    background: #2F2F2F;
+}
+
+@media (max-width:1368px) {
+    .container {
+        padding: 0px 25px;
+        height: 100vh;
+    }
+    .main__container {
+        padding-top: 2%;
+    }
+}
+
+@media (max-width:968px) {
+    .background {
+        height: auto;
+    }
+    .main {}
+    .main__container {
+        padding-top: 2%;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        padding: 0px 15px;
+    }
+    .background {
+        background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url(../img/background-image.png) no-repeat center right -15px;
+        background-size: 400px;
+        background-position: bottom center;
+    }
+    .overlay {
+        display: none;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main__container {
+        padding-top: 1%;
+    }
+    .main__film-logo {
+        width: 275px;
+        height: 62px;
+    }
+    .main__description {
+        font-size: 15px;
+    }
+    .main__button {
+        margin: 0px 0px 0px 13px;
+        height: 45px;
+    }
+    .tags__text {
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+@media (max-width:576px) {
+    .background {
+        background-size: 250px;
+    }
+    .button__image {
+        margin: 0;
+    }
+    .main__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 0px 13px;
+        padding: 0;
+        width: 65px;
+        height: 45px;
+    }
+    .button__text_none {
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+    .header__name {
+        display: none;
+    }
+    .tags__text {
+        margin: 0px 5px 0px 0px;
+        font-size: 13px;
+    }
+    .main__description {
+        font-size: 15px;
+    }
+    .background {
+        background-size: 200px;
+        background-position: bottom center;
+    }
+}
